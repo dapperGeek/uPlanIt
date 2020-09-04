@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:paddingTop="@dimen/micro_margin"
+                android:paddingBottom="@dimen/micro_margin"
+                android:paddingStart="@dimen/micro_margin"
+                android:paddingEnd="@dimen/micro_margin"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/micro_margin"
+                android:paddingRight="@dimen/micro_margin">
+
+    <!--  ListRow Left side Thumbnail glideImage -->
+    <LinearLayout android:id="@+id/thumbnail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginEnd="5dip"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginRight="5dip">
+
+        <ImageView
+            android:contentDescription="@string/title_select_image"
+            android:id="@+id/cat_list_image"
+            android:layout_width="@dimen/lists_img_thumb_sm"
+            android:layout_height="@dimen/lists_img_thumb_sm"
+            android:src="@drawable/no_image"/>
+
+    </LinearLayout>
+
+    <!-- Category title  -->
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_marginTop="@dimen/margin_five"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:textColor="#302f2f"
+        android:typeface="sans"
+        android:textSize="@dimen/text_seventeen"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/margin_twenty"/>
+
+    <!-- Number of brands in category -->
+    <TextView
+        android:id="@+id/brands_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_marginTop="@dimen/margin_two"
+        android:layout_marginStart="@dimen/margin_twenty"
+        android:textColor="#363535"
+        android:typeface="sans"
+        android:textSize="@dimen/lists_desc"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/margin_twenty"/>
+
+     <!--Rightend Arrow-->
+    <ImageView
+    android:contentDescription="@string/right_arrow"
+    android:layout_width="@dimen/margin_twenty"
+    android:layout_height="@dimen/margin_twenty"
+    android:src="@drawable/ic_action_next"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"/>
+
+</RelativeLayout>

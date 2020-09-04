@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_brand_update_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:layout_marginTop="@dimen/micro_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:showIn="@layout/fragment_complete_brand_registration">
+
+    <ScrollView
+        android:id="@+id/update_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/content_brand_update_details_form"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin_five"
+            android:paddingBottom="@dimen/micro_margin"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Brand Logo or icon-->
+
+            <RelativeLayout
+                android:id="@+id/brand_logo_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/upload_brand_dp"
+                    android:text="@string/upload_dp_string"
+                    android:textSize="@dimen/text_twoFive"
+                    android:layout_marginStart="@dimen/margin_five"
+                    android:layout_marginBottom="@dimen/margin_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five"/>
+
+                <ImageView
+                    android:id="@+id/brand_logo"
+                    android:layout_below="@id/upload_brand_dp"
+                    android:contentDescription="@string/logo_description"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/size_two_fifty"
+                    android:layout_height="@dimen/size_two_fifty"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_add"/>
+
+            </RelativeLayout>
+
+            <!--Phone number-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone_in"
+                android:layout_width="match_parent"
+                android:layout_below="@id/brand_logo_view"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_brand_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_twoFive"
+                    android:padding="@dimen/textFieldPadding"
+                    android:paddingStart="@dimen/textLeftPadding"
+                    android:paddingLeft="@dimen/textLeftPadding"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Categories Spinner-->
+
+            <RelativeLayout
+                android:id="@+id/spinner_view"
+                android:layout_below="@id/phone_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/select_category_text"
+                    android:textSize="@dimen/text_twoFive"
+                    android:layout_marginStart="@dimen/margin_five"
+                    android:text="@string/select_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five"/>
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_below="@id/select_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <!--Location-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/_location_layout"
+                android:layout_below="@id/spinner_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/location"
+                    android:hint="@string/prompt_location"
+                    android:textSize="@dimen/text_twoFive"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                    android:id="@+id/place_autocomplete_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight=".10"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/micro_margin"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/description_layout"
+                android:layout_below="@id/_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lists_img_thumb_md"
+                    android:gravity="top"
+                    android:hint="@string/prompt_description"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/text_twoFive"
+                    android:padding="@dimen/textFieldPadding"
+                    android:paddingEnd="@dimen/textLeftPadding"
+                    android:paddingRight="@dimen/textLeftPadding"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_below="@id/description_layout"
+                android:text="@string/action_submit"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/text_twoFive"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/micro_margin"
+                android:paddingLeft="@dimen/size_eighty"
+                android:paddingRight="@dimen/size_eighty"
+                android:layout_centerInParent="true"
+                android:background="@drawable/border_grey"
+                android:padding="@dimen/margin_twenty"
+                android:paddingEnd="@dimen/size_eighty"
+                android:paddingStart="@dimen/size_eighty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/lists_img_thumb_sm"/>
+            />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

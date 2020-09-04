@@ -1,0 +1,373 @@
+<resources>
+    <string-array name="categories">
+        <item>1=Accessories</item>
+        <item>2=Cake Makers</item>
+        <item>3=Car Rentals</item>
+        <item>4=Catering</item>
+        <item>5=Dancers</item>
+        <item>6=DJs</item>
+        <item>22=Drinks/Liquor</item>
+        <item>7=Event Decorators</item>
+        <item>8=Event Planning</item>
+        <item>9=Fashion Designers</item>
+        <item>10=Hairstyling</item>
+        <item>11=Host/MCs</item>
+        <item>12=Hotels/Accommodation</item>
+        <item>13=Make-up/Beauty</item>
+        <item>14=Musician/Band</item>
+        <item>15=Photography</item>
+        <item>16=Security</item>
+        <item>17=Souvenirs/Corporate Gifts</item>
+        <item>18=Textile/Aso-Ebi</item>
+        <item>19=Usher</item>
+        <item>20=Venues</item>
+        <item>21=Video Coverage</item>
+    </string-array>
+
+    <string name="app_name">uPlanIt</string>
+    <string name="textview_id">id</string>
+    <string name="textview_username">Username</string>
+    <string name="textview_password">Password</string>
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="done">Next</string>
+
+    <!--Facebook app Id-->
+    <string name="facebook_app_id">276634202769160</string>
+    <string name="fb_login_protocol_scheme">fb276634202769160</string>
+
+    <!--navigation titles-->
+    <string name="browse_brands">Browse Brands</string>
+    <string name="fav_brands">Favourite Brands</string>
+    <string name="usage_terms">Terms of Use</string>
+    <string name="about_page">About</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="invite_friends">Invite Friends</string>
+
+    <!-- Strings related to login & register -->
+    <string name="prompt_create">Login or sign up to plan your event</string>
+    <string name="prompt_login">Login/Register</string>
+    <string name="prompt_logout">Logout</string>
+    <string name="logged_out">You have been logged out</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_brandName">Brand Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_reset_password">Reset Password</string>
+    <string name="prompt_password_help">Forgot your password?</string>
+    <string name="prompt_register_brand">To Create Brand Profile</string>
+    <string name="prompt_registered">Already Got An Account?</string>
+    <string name="prompt_register_user">Not A Brand?</string>
+    <string name="prompt_register_here">Register Here</string>
+    <string name="password_help">Enter your email below, a temporary password will be generated and sent to the email address</string>
+    <string name="password_generated">A temporary password has been generated and sent to your email address</string>
+    <string name="password_sub_help">Note: The email you enter must be the same as the one you registered with</string>
+    <string name="prompt_phone">Phone Number</string>
+    <string name="prompt_phone_copied">Phone number copied to clipboard</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_location">Location</string>
+    <string name="prompt_description">Services Description</string>
+    <string name="already_got_account">Already got an account?</string>
+    <string name="login_here">Login Here</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="not_brand">Not a brand?</string>
+    <string name="create_brand">To create a brand account</string>
+    <string name="register_here">Register here</string>
+    <string name="upload_dp_string">Upload Brand Logo</string>
+    <string name="terms_statement">By signing up you agree with the </string>
+    <string name="terms_string">Terms of Use</string>
+    <string name="privacy_string">Privacy Policy</string>
+    <string name="click_here_string">Click Here</string>
+    <string name="prompt_to_exit">Press back again to exit uPlanIt</string>
+
+    <string name="logo_description">uPlanIt</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_up">Create Account</string>
+    <string name="action_brand_sign_up">Create Brand Account</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_skip">Skip For Now</string>
+    <string name="action_submit">Submit</string>
+    <string name="v_phone_header">Verify Phone Number</string>
+    <string name="v_location_header">Verify Brand Address</string>
+    <string name="verificationPending">Information sent, your profile will be updated once verified</string>
+    <string name="send_code">Verify Phone Number</string>
+    <string name="verify_address">Verify Address</string>
+    <string name="no_login_status">Log In</string>
+    <string name="search_keyword">Enter Brand name/Keyword </string>
+    <string name="search_string">Search</string>
+    <string name="title_clear_list">Clear list</string>
+    <string name="confirm_events_clear">Do you really want to delete all your saved events?</string>
+    <string name="confirm_fav_clear">Do you really want to delete all your saved favourites?</string>
+
+    <!--Events strings-->
+    <string name="action_search_events">Search Events</string>
+    <string name="save_event">Save Event</string>
+    <string name="update_event">Edit Event</string>
+    <string name="share_event">Share Event</string>
+    <string name="event_name_string">Event Name</string>
+    <string name="add_event_image_string">Add Event DP</string>
+    <string name="event_start_string">Event Starts</string>
+    <string name="event_end_string">Event Ends</string>
+    <string name="event_location_string">Event Location</string>
+    <string name="event_detail_string">Event Detail</string>
+    <string name="invite_people_string">Invite People</string>
+    <string name="no_invitees_string">No one has been invited</string>
+    <string name="no_event">You haven\'t planned any event </string>
+    <string name="plan_event_now">Plan an event now</string>
+    <string name="enter_date_string">Select Date</string>
+    <string name="enter_time_string">Time</string>
+    <string name="default_date_time">Thur, Feb 9, 2017 09:55</string>
+
+    <!--AppBar menu items-->
+    <string name="edit_password">Change Password</string>
+    <string name="edit_info">Edit Profile</string>
+    <string name="edit_dp">Change Photo</string>
+    <string name="manage_verifications">Verify Contact Details</string>
+    <string name="brand_logout">Logout</string>
+    <string name="upload_images">Upload Pictures</string>
+    <string name="upload_more_images">Upload More Pictures</string>
+    <string name="upload_more_premium">Upload more: Go premium</string>
+    <string name="edit_gallery">Edit Gallery</string>
+    <string name="add_favourite">Add Favourite</string>
+    <string name="remove_favourite">Remove Favourite</string>
+    <string name="share_brand">Share Brand</string>
+
+    <!--Warning messages-->
+    <string name="warning_select_image">Select an image before you submit</string>
+    <string name="warning_select_different_image">Error processing image, select different image</string>
+    <string name="warning_no_image_selected">"You haven\'t selected an image"</string>
+    <string name="wrong_something">"Something went wrong"</string>
+
+    <!--Error messages-->
+    <string name="error_duplicate_event_name">This event name is already in your events</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_brandName">Invalid Brand Name format</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">Password is too short or contains spaces</string>
+    <string name="error_invalid_input_xters">Response contains invalid characters</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_incorrect_date">Select correct date</string>
+    <string name="error_duplicate_password">The current and new password are same</string>
+    <string name="error_unmatched_passwords">Password does not match with new password</string>
+    <string name="error_password_update">Password update failed</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_field_phone">This phone number is invalid</string>
+    <string name="error_username_taken">This username is associated with another account</string>
+    <string name="error_dataConnection">Connection error&#8230; please check data connection and retry</string>
+    <string name="error_processing">Processing error&#8230; please check data connection and retry</string>
+    <string name="error_email_taken">This email is associated with another account</string>
+    <string name="error_username_email_taken">This username is associated with another account</string>
+    <string name="error_creating_account">Problem creating your account. \n Check internet connection and retry</string>
+    <string name="swipe_to_refresh_page">Swipe down to reload</string>
+    <string name="empty_gallery_premium">No picture in your gallery</string>
+    <string name="empty_gallery_admin">No picture in your gallery\nYou have 9 upload slots free</string>
+    <string name="empty_gallery">No picture in brand gallery</string>
+    <string name="reload_page">Reload page</string>
+    <string name="empty_search">No result found for :\n</string>
+    <string name="empty_fav">You don\'t have any favourite saved. \n
+        Select a favourite by clicking the heart icon on the brand pages
+    </string>
+    <string name="fav_not_found">No favourite brand found</string>
+
+
+    <!--Successful operation messages-->
+    <string name="successful_login">You have been successfully logged in.</string>
+    <string name="registration_successful">Thank you for signing up, now get to planning!</string>
+    <string name="password_update_ok">Password update successful</string>
+    <string name="info_update_ok">Update successful</string>
+    <string name="brand_registration_continues">Thank you for signing up, complete profile info to continue.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+    <string name="goto_register">No account yet? Register Here</string>
+    <string name="goto_brand_register">To create A Brand Account, Register Here</string>
+    <string name="goto_login">Already got an account? Login Here</string>
+    <string name="goto_user_registration">Not A Brand? Register Here</string>
+
+    <!--Prompts-->
+    <string name="progress_loading_string">Loading &#8230;</string>
+
+
+    <!-- Strings related to the FragmentUserDashboard screen -->
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search_brands">Search Brands</string>
+    <string name="action_share">Share</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="welcome_text">Welcome</string>
+    <string name="rating_text">Rating: </string>
+    <string name="mobile_text">Mobile</string>
+    <string name="address_text">Address</string>
+    <string name="brand_address_text">Your actual address</string>
+    <string name="description_text">Description</string>
+    <string name="firstname_text">First Name</string>
+    <string name="lastname_text">Last Name</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="phone_number_text">Phone Number</string>
+    <string name="change_pswd_text">Change Password</string>
+    <string name="current_pswd_text">Current Password</string>
+    <string name="new_pswd_text">New Password</string>
+    <string name="retype_pswd_text">Retype Password</string>
+    <string name="acct_settings_text">Account Setting</string>
+    <string name="required_field_text">Required</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="close_text">Close</string>
+    <string name="save_text">Save</string>
+
+    <!--Dialog titles-->
+    <string name="title_edit_brand">Edit Details</string>
+
+    <!--App bar titles-->
+    <string name="title_main_activity">uPlanIt</string>
+    <string name="title_my_events">My Events</string>
+    <string name="title_activity_user_login">Sign in</string>
+    <string name="title_activity_register">Create Account</string>
+    <string name="right_arrow">arrow</string>
+    <string name="title_register_brand">Create Brand Account</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="title_activity_services">Browse Services</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="nav_plan_event">Plan Event</string>
+    <string name="nav_account">My Account</string>
+    <string name="nav_my_events">My Events</string>
+    <string name="nav_featured_brands">Top Brands</string>
+    <string name="nav_browse_brands">Brands</string>
+    <string name="categoryString">Category</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_favorites">Favourites</string>
+    <string name="title_activity_featured">Top Brands</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_brands">Brands</string>
+    <string name="title_activity_my_brands">MyBrands</string>
+    <string name="title_activity_brand_profile">Brand Profile</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_swipe">Swipe</string>
+    <string name="title_activity_brand_update_details">Complete Registration</string>
+    <string name="title_activity_brand_dashboard">Dashboard</string>
+    <string name="title_activity_brand_dash_details_fragment">BrandDashDetailsFragment</string>
+    <string name="title_activity_brand_dash_gallery">Gallery Dashboard</string>
+    <string name="title_activity_plan_event">Plan New Event</string>
+    <string name="title_activity_update_event">Edit Event</string>
+    <string name="title_activity_test_fragment">TestFragment</string>
+
+
+    <string name="clear_events">Clear Events</string>
+    <string name="clear_favorites">Clear Favourites</string>
+    <string name="select_category">Select category</string>
+
+
+    <!--GlideImage gallery and manipulations-->
+    <string name="upload_selected_images">Upload</string>
+    <string name="clear_selected_images">Clear</string>
+    <string name="cancel_selected_images">Cancel</string>
+
+    <string name="button_retry_string">Retry</string>
+    <string name="title_activity_cat_view">CatViewActivity</string>
+    <string name="title_activity_categories_view">Browse Categories</string>
+    <string name="title_activity_spinner_fragment">My Spinner</string>
+    <string name="title_activity_fragment_category_brands">FragmentCategoryBrands</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <!-- Verification status strings -->
+    <string name="brand_unverified">This brand has no verification</string>
+    <string name="phone_verified">Phone number verified</string>
+    <string name="location_verified">Location verified</string>
+    <string name="brand_verified">Brand has been verified</string>
+
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_main_search">Search Brands</string>
+
+</resources>

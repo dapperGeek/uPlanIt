@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/micro_margin">
+
+    <ImageView
+        android:id="@+id/event_thumbnail"
+        android:layout_width="@dimen/lists_img_thumb_md"
+        android:layout_height="@dimen/lists_img_thumb_md"
+        android:layout_marginEnd="@dimen/micro_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/micro_margin"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_seventeen"
+        android:textColor="@color/colorPrimary"
+        android:layout_toEndOf="@id/event_thumbnail"
+        android:layout_alignTop="@id/event_thumbnail"
+        android:layout_toRightOf="@id/event_thumbnail"/>
+
+    <ImageView
+        android:id="@+id/ic_calendar_time"
+        android:layout_below="@id/event_name"
+        android:layout_toEndOf="@id/event_thumbnail"
+        android:src="@drawable/ic_calendar_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/event_thumbnail"/>
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_below="@id/event_name"
+        android:layout_toEndOf="@id/ic_calendar_time"
+        android:text="@string/default_date_time"
+        android:layout_alignBaseline="@id/ic_calendar_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ic_calendar_time"/>
+
+    <ImageView
+        android:id="@+id/ic_location"
+        android:layout_below="@id/ic_calendar_time"
+        android:layout_toEndOf="@id/event_thumbnail"
+        android:src="@drawable/ic_location_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/event_thumbnail"/>
+
+    <TextView
+        android:id="@+id/event_location"
+        android:layout_toEndOf="@id/ic_location"
+        android:layout_alignTop="@id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ic_location"/>
+
+</RelativeLayout>

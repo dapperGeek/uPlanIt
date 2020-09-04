@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dappergeek0.uplanit.FragmentCompleteBrandRegistration">
+
+    <!--include the progress animation layout-->
+
+    <include layout="@layout/app_progress_bar" />
+
+    <!--include the input form view-->
+    <include layout="@layout/content_complete_brand_registration" />
+
+</android.support.design.widget.CoordinatorLayout>

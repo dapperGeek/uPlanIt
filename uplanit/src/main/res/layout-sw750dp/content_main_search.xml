@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/lists_img_thumb_md"
+    android:paddingRight="@dimen/lists_img_thumb_md"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dappergeek0.uplanit.MainSearch"
+    tools:showIn="@layout/activity_main_search">
+
+    <ScrollView
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Search keyword input-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/search_keyword_layout"
+                android:layout_below="@id/edit_end_layout"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_keyword"
+                    android:textSize="@dimen/text_twoFive"
+                    android:hint="@string/search_keyword"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                    android:id="@+id/keyword_autocomplete_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight=".10"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/micro_margin"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--Location-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/_location_layout"
+                android:layout_below="@id/search_keyword_layout"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/location"
+                    android:textSize="@dimen/text_twoFive"
+                    android:hint="@string/prompt_location"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                    android:id="@+id/place_autocomplete_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight=".10"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/micro_margin"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--Categories Spinner-->
+            <TextView
+                android:id="@+id/select_category_text"
+                android:layout_below="@id/_location_layout"
+                android:textSize="@dimen/text_twoFive"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:text="@string/select_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_below="@id/select_category_text"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/do_search"
+                android:layout_below="@id/category_spinner"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_grey"
+                android:padding="@dimen/size_thirty"
+                android:paddingStart="@dimen/size_eighty"
+                android:paddingEnd="@dimen/size_eighty"
+                android:text="@string/search_string"
+                android:textSize="@dimen/text_twoFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_event_viewer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/size_forty"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dappergeek0.uplanit.EventViewerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_below="@id/event_image"
+                android:src="@drawable/select_logo"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin_twenty"
+                android:layout_height="@dimen/size_two_fifty"/>
+
+            <Button
+                android:id="@+id/update_event"
+                android:layout_below="@id/event_image"
+                android:text="@string/update_event"
+                android:layout_margin="@dimen/micro_margin"
+                android:layout_alignParentStart="true"
+                android:drawableStart="@drawable/ic_create_edit"
+                android:gravity="start|center"
+                android:background="@drawable/border_grey"
+                android:padding="@dimen/margin_five"
+                android:paddingEnd="@dimen/margin_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_create_edit"
+                android:paddingRight="@dimen/margin_twenty">
+
+            </Button>
+
+            <Button
+                android:id="@+id/share_event"
+                android:layout_toEndOf="@id/update_event"
+                android:layout_below="@id/event_image"
+                android:drawableStart="@drawable/ic_share"
+                android:gravity="start|center"
+                android:text="@string/share_event"
+                android:layout_margin="@dimen/micro_margin"
+                android:background="@drawable/border_grey"
+                android:padding="@dimen/margin_five"
+                android:paddingEnd="@dimen/margin_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/update_event"
+                android:drawableLeft="@drawable/ic_share"
+                android:paddingRight="@dimen/margin_twenty"/>
+
+            <View
+                android:id="@+id/sep1"
+                android:layout_below="@id/update_event"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:paddingBottom="@dimen/margin_five"
+                android:background="@color/light_grey"/>
+
+            <TextView
+                android:id="@+id/event_starts"
+                android:layout_below="@id/sep1"
+                android:text="@string/event_start_string"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_marginBottom="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/start_info"
+                android:layout_toEndOf="@id/event_starts"
+                android:layout_below="@id/sep1"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_marginBottom="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/event_starts"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/event_ends"
+                android:layout_below="@id/event_starts"
+                android:text="@string/event_end_string"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/end_info"
+                android:layout_toEndOf="@id/event_ends"
+                android:layout_below="@id/start_info"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/event_ends"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <View
+                android:id="@+id/sep2"
+                android:layout_below="@id/event_ends"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:paddingBottom="@dimen/margin_five"
+                android:background="@color/light_grey"/>
+
+            <ImageView
+                android:id="@+id/pin_drop"
+                android:layout_below="@id/sep2"
+                android:src="@drawable/ic_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/event_location"
+                android:layout_alignBaseline="@id/pin_drop"
+                android:layout_below="@id/sep2"
+                android:layout_toEndOf="@id/pin_drop"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pin_drop"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <View
+                android:id="@+id/sep3"
+                android:layout_below="@id/pin_drop"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:paddingBottom="@dimen/margin_five"
+                android:background="@color/light_grey"/>
+
+            <TextView
+                android:id="@+id/e_details"
+                android:layout_below="@id/sep3"
+                android:text="@string/event_detail_string"
+                android:layout_marginStart="@dimen/micro_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_below="@id/e_details"
+                android:padding="@dimen/micro_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

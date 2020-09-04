@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--app menu links-->
+    <group android:id="@+id/group_menu"
+           android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_featured_brands"
+            android:icon="@drawable/ic_nav_brands"
+            android:title="@string/nav_browse_brands" />
+        <item
+            android:id="@+id/nav_account"
+            android:visible="false"
+            android:icon="@drawable/ic_nav_user"
+            android:title="@string/nav_account" />
+        <item
+            android:id="@+id/nav_my_events"
+            android:visible="false"
+            android:icon="@drawable/ic_nav_events"
+            android:title="@string/nav_my_events" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_nav_categories"
+            android:title="@string/nav_categories" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_border"
+            android:title="@string/nav_favorites" />
+        <!--<item-->
+            <!--android:id="@+id/nav_spinner"-->
+            <!--android:icon="@drawable/ic_category_host"-->
+            <!--android:title="Spinner" />-->
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_nav_sign_in"
+            android:title="@string/prompt_login" />
+        <item
+            android:id="@+id/nav_logout"
+            android:visible="false"
+            android:icon="@drawable/ic_nav_login"
+            android:title="@string/prompt_logout" />
+    </group>
+
+    <!--web links -->
+    <group android:id="@+id/group_links">
+        <item
+            android:id="@+id/nav_terms"
+            android:title="@string/usage_terms" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/about_page" />
+    <item
+            android:id="@+id/nav_contact"
+            android:title="@string/contact_us" />
+    <item
+            android:id="@+id/nav_invite"
+            android:title="@string/invite_friends" />
+    </group>
+
+</menu>

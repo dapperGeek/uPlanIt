@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+  compileSdkVersion 24
+  buildToolsVersion '24.0.3'
+
+  defaultConfig {
+    minSdkVersion 15
+    targetSdkVersion 24
+    versionCode 1
+    versionName '1.0'
+
+    consumerProguardFiles 'proguard-rules.txt'
+  }
+}
+
+dependencies {
+  compile "com.squareup.picasso:picasso:2.5.2"
+  provided "jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1"
+}
+
+publish {
+  userOrg = 'novoda'
+  groupId = 'com.novoda'
+  artifactId = 'bintray-release'
+  publishVersion = '0.4.0'
+  desc = 'Super duper easy way to release your Android and other artifacts to bintray'
+  website = "https://github.com/novoda/${rootProject.name}"
+  autoPublish = false
+}

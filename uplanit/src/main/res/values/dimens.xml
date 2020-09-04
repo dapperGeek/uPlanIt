@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--Custom screen margins-->
+    <dimen name="margin_two">2dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_fifteen">15dp</dimen>
+    <dimen name="margin_twenty">20dp</dimen>
+    <dimen name="margin_two_five">25dp</dimen>
+    <dimen name="size_thirty">30dp</dimen>
+    <dimen name="size_forty">40dp</dimen>
+    <dimen name="size_fortyFive">45dp</dimen>
+    <dimen name="micro_margin">10dp</dimen>
+    <dimen name="mini_margin">50dp</dimen>
+    <dimen name="size_sixty">60dp</dimen>
+    <dimen name="size_eighty">80dp</dimen>
+    <dimen name="size_ninety">90dp</dimen>
+    <dimen name="maxi_margin">120dp</dimen>
+    <dimen name="size_two_fifty">250dp</dimen>
+    <dimen name="size_three_hundred">300dp</dimen>
+    <dimen name="size_three_fifty">350dp</dimen>
+    <dimen name="size_four_hundred">400dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="loginPadTop">50dp</dimen>
+    <dimen name="login_padding_bottom">5dp</dimen>
+    <dimen name="loginNoPadTop">5dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">120dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="header_padding">10dp</dimen>
+    <dimen name="header_min_height">140dp</dimen>
+    <dimen name="formLinearPadding">10dp</dimen>
+    <dimen name="textFieldPadding">10dp</dimen>
+    <dimen name="textLeftPadding">5dp</dimen>
+    <dimen name="formTextSize">18sp</dimen>
+    <dimen name="button_margin_top">16dp</dimen>
+
+    <!--Image resources-->
+    <dimen name="appLogoWidth">150dp</dimen>
+    <dimen name="appLogoHeight">150dp</dimen>
+    <dimen name="nav_logo_width">140dp</dimen>
+    <dimen name="nav_logo_height">120dp</dimen>
+    <dimen name="updateLogoProps">200dp</dimen>
+    <dimen name="brand_logo">120dp</dimen>
+
+    <!--Lists dimensions-->
+    <dimen name="lists_img_thumb_lg">150dp</dimen>
+    <dimen name="lists_img_thumb_md">100dp</dimen>
+    <dimen name="lists_img_thumb_sm">50dp</dimen>
+    <dimen name="lists_rating_ht">18dp</dimen>
+    <dimen name="list_rating_wd">80dp</dimen>
+    <dimen name="lists_title">18sp</dimen>
+    <dimen name="lists_desc">12sp</dimen>
+
+    <!--General Text sizes-->
+    <dimen name="text_ten">10sp</dimen>
+    <dimen name="text_twelve">12sp</dimen>
+    <dimen name="text_fourteen">14sp</dimen>
+    <dimen name="text_fifteen">15sp</dimen>
+    <dimen name="text_seventeen">17sp</dimen>
+    <dimen name="text_eighteen">18sp</dimen>
+    <dimen name="text_twenty">20sp</dimen>
+    <dimen name="text_twoFive">25sp</dimen>
+    <dimen name="text_twoEight">28sp</dimen>
+    <dimen name="text_thirty">30sp</dimen>
+    <dimen name="text_threeFive">35sp</dimen>
+
+
+    <!--Activity text labels-->
+    <dimen name="activity_titles">15sp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!--FloatingActionButton Overrides-->
+    <dimen name="design_fab_image_size" tools:override="true">36dp</dimen>
+    <dimen name="design_fab_size" tools:override="true">100dp</dimen>
+    <dimen name="design_fab_content_size" tools:override="true">98dp</dimen>
+
+</resources>

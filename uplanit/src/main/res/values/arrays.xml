@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category_icons">
+        <item>@drawable/ic_category_accessories</item>
+        <item>@drawable/ic_category_cake_makers</item>
+        <item>@drawable/ic_category_car_rentals</item>
+        <item>@drawable/ic_category_catering</item>
+        <item>@drawable/ic_category_dancers</item>
+        <item>@drawable/ic_category_dj</item>
+        <item>@drawable/ic_category_drinks</item>
+        <item>@drawable/ic_category_decorators</item>
+        <item>@drawable/ic_category_planner</item>
+        <item>@drawable/ic_category_designers</item>
+        <item>@drawable/ic_category_hairstylist</item>
+        <item>@drawable/ic_category_host</item>
+        <item>@drawable/ic_category_hotels</item>
+        <item>@drawable/ic_category_makeup</item>
+        <item>@drawable/ic_action_name</item>
+        <item>@drawable/ic_category_photos</item>
+        <item>@drawable/ic_category_security</item>
+        <item>@drawable/ic_category_souvenirs</item>
+        <item>@drawable/ic_category_textile</item>
+        <item>@drawable/ic_category_usher</item>
+        <item>@drawable/ic_category_venue</item>
+        <item>@drawable/ic_category_videos</item>
+    </array>
+
+    <array name="rating_stars">
+    <item>@drawable/ic_0_star</item>
+    <item>@drawable/ic_1_star</item>
+    <item>@drawable/ic_2_star</item>
+    <item>@drawable/ic_3_star</item>
+    <item>@drawable/ic_4_star</item>
+    <item>@drawable/ic_5_star</item>
+    </array>
+</resources>

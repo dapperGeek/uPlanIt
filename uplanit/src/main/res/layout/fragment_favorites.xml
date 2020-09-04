@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.dappergeek0.uplanit.FragmentFavorites" >
+
+    <include layout="@layout/app_progress_bar"/>
+
+    <include layout="@layout/activity_conn_error"/>
+
+
+    <!--empty favorite view   -->
+    <RelativeLayout
+        android:id="@+id/empty_fav_view"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/micro_margin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/no_fav"
+            android:layout_width="@dimen/lists_img_thumb_md"
+            android:src="@drawable/no_fav_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/lists_img_thumb_md"/>
+
+        <TextView
+            android:id="@+id/empty_result"
+            android:layout_below="@id/no_fav"
+            android:text="@string/empty_fav"
+            android:textSize="@dimen/text_eighteen"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFavorites"
+                android:layout_marginBottom="@dimen/size_forty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/reload_button"
+        android:layout_below="@id/empty_fav_view"
+        android:background="@drawable/border_grey"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/micro_margin"
+        android:paddingStart="@dimen/mini_margin"
+        android:paddingEnd="@dimen/mini_margin"
+        android:layout_centerInParent="true"
+        android:text="@string/reload_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Facebook login button-->
+    <style name="FacebookLoginButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_twoFive</item>
+        <item name="android:background">@drawable/facebook_button</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/size_thirty</item>
+        <item name="android:paddingRight">@dimen/lists_img_thumb_md</item>
+        <item name="android:paddingLeft">@dimen/lists_img_thumb_md</item>
+        <item name="android:paddingTop">@dimen/margin_twenty</item>
+        <item name="android:paddingBottom">@dimen/margin_twenty</item>
+    </style>
+</resources>

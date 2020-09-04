@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dappergeek0.uplanit.fragments.BrandDashDetailsFragment">
+    <item
+        android:id="@+id/edit_password"
+        android:orderInCategory="100"
+        android:title="@string/edit_password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_contact"
+        android:orderInCategory="100"
+        android:title="@string/edit_info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_dp"
+        android:orderInCategory="100"
+        android:title="@string/edit_dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/v_manager"
+        android:orderInCategory="100"
+        android:title="@string/manage_verifications"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/brand_logout"
+        android:orderInCategory="100"
+        android:title="@string/brand_logout"
+        app:showAsAction="never" />
+</menu>

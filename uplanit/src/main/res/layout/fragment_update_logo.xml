@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context="com.dappergeek0.uplanit.dialogs.FragmentUpdateLogo">
+
+    <!-- Seperator -->
+    <View
+        android:id="@+id/sep0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_thirty"
+        android:layout_marginTop="@dimen/margin_five"
+        android:background="#f1f1f2"/>
+
+    <!-- Seperator -->
+    <View
+        android:id="@+id/sep1"
+        android:layout_below="@id/sep0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five"
+        android:background="@color/light_grey"/>
+
+    <ImageView
+        android:id="@+id/brand_logo_view"
+        android:layout_below="@id/sep1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/lists_img_thumb_lg"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image"
+        android:layout_height="@dimen/lists_img_thumb_lg"/>
+
+    <Button
+        android:id="@+id/select_image_btn"
+        android:layout_below="@id/brand_logo_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/micro_margin"
+        android:background="@drawable/border_grey"
+        android:text="@string/title_select_image"
+        android:paddingStart="@dimen/micro_margin"
+        android:paddingEnd="@dimen/micro_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/dialog_buttons"
+        android:layout_below="@id/select_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_dialog_buttons"/>
+
+    </RelativeLayout>
+
+    <!--Progress animation layout-->
+    <include layout="@layout/dialog_progress_layout"/>
+
+</RelativeLayout>

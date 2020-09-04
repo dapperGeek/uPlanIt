@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context="com.dappergeek0.uplanit.dialogs.FragmentUpdateBrandInfo">
+
+    <!--Progress animation layout-->
+
+    <include layout="@layout/dialog_progress_layout"/>
+
+    <!-- Seperator -->
+    <View
+        android:id="@+id/sep0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_thirty"
+        android:layout_marginTop="@dimen/margin_five"
+        android:background="#f1f1f2"/>
+
+    <!-- Seperator -->
+    <View
+        android:id="@+id/sep1"
+        android:layout_below="@id/sep0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five"
+        android:background="@color/light_grey"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/sep1"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Brand Name -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_brand_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_brandName"
+                    android:maxLines="1"
+                    android:textSize="@dimen/formTextSize"
+                    android:padding="@dimen/textFieldPadding"
+                    android:paddingStart="@dimen/textLeftPadding"
+                    android:paddingLeft="@dimen/textLeftPadding"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--include brand details form-->
+            <RelativeLayout
+                android:id="@+id/form_layout"
+                android:layout_below="@id/brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/content_complete_brand_registration" />
+
+            </RelativeLayout>
+
+            <!--Bottom dialog buttons-->
+            <RelativeLayout
+                android:id="@+id/buttons_layout"
+                android:layout_below="@id/form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/layout_dialog_buttons"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

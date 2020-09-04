@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal" >
+
+    <!--  ListRow Left side Thumbnail glideImage -->
+    <LinearLayout android:id="@+id/thumbnail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginEnd="5dip"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/lists_img_thumb_md"
+            android:layout_height="@dimen/lists_img_thumb_md"
+            android:layout_marginEnd="@dimen/micro_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image"
+            android:layout_marginRight="@dimen/micro_margin"/>
+
+    </LinearLayout>
+
+    <!-- Brand name -->
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_five"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:textColor="@color/colorPrimaryDark"
+        android:typeface="sans"
+        android:textSize="@dimen/text_twenty"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+    <!--Star ratings-->
+    <ImageView
+        android:id="@+id/list_rating"
+        android:layout_below="@+id/brand_name"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/lists_rating_ht"
+        android:scaleType="center"
+        android:src="@drawable/ic_3_star"
+        android:layout_toRightOf="@id/thumbnail"/>
+
+     <!--category-->
+    <TextView
+        android:id="@+id/list_category"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:layout_marginRight="@dimen/margin_twenty"
+        android:layout_marginEnd="@dimen/margin_twenty"
+        android:layout_below="@id/brand_name"
+        android:textSize="@dimen/text_twelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Services description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_rating"
+        android:layout_toEndOf="@id/thumbnail"
+        android:textColor="#535252"
+        android:textSize="@dimen/lists_desc"
+        android:layout_marginTop="@dimen/micro_margin"
+        android:layout_marginRight="@dimen/micro_margin"
+        android:layout_marginEnd="@dimen/micro_margin"
+        android:layout_toRightOf="@id/thumbnail"/>
+
+</RelativeLayout>

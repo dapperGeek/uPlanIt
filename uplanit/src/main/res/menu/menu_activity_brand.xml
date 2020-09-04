@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dappergeek0.uplanit.fragments.BrandDetailsFragment">
+
+    <item
+        android:id="@+id/add_fav"
+        android:orderInCategory="100"
+        android:title="@string/add_favourite"
+        android:icon="@drawable/ic_favourite_border_white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/remove_fav"
+        android:orderInCategory="105"
+        android:visible="false"
+        android:icon="@drawable/ic_favorite_red"
+        android:title="@string/remove_favourite"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/share_brand"
+        android:orderInCategory="110"
+        android:title="@string/share_brand"
+        android:icon="@drawable/ic_share_holo_dark"
+        app:showAsAction="always" />
+
+</menu>

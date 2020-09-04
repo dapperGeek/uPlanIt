@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/dark_gradient"
+                android:paddingBottom="@dimen/login_padding_bottom"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                tools:context="com.dappergeek0.uplanit.FragmentBrandRegistration">
+
+    <!-- Login progress -->
+    <include layout="@layout/app_progress_bar" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/micro_margin"
+        android:contentDescription="@string/app_name"
+        android:layout_width="@dimen/lists_img_thumb_md"
+        android:layout_height="@dimen/lists_img_thumb_md"
+        android:src="@drawable/logo"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/micro_margin"
+        android:gravity="bottom">
+
+        <!-- to user registration link-->
+        <LinearLayout
+            android:id="@+id/to_user_layout"
+            android:orientation="horizontal"
+            android:layout_below="@id/fb_login_button"
+            android:layout_marginTop="@dimen/micro_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/register_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/micro_margin"
+                android:text="@string/prompt_register_user"
+                android:layout_marginRight="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/to_user_registration"
+                android:text="@string/prompt_register_here"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- to login screen link-->
+        <LinearLayout
+            android:id="@+id/to_login_layout"
+            android:orientation="horizontal"
+            android:layout_below="@id/to_user_layout"
+            android:layout_marginTop="@dimen/micro_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/micro_margin"
+                android:text="@string/already_got_account"
+                android:layout_marginRight="@dimen/micro_margin"/>
+
+            <TextView
+                android:id="@+id/text_to_login"
+                android:text="@string/login_here"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!--terms link-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/terms_layout"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@id/to_login_layout"-->
+            <!--android:layout_marginTop="@dimen/micro_margin"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/terms_statement"-->
+                <!--android:text="@string/terms_statement"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginEnd="@dimen/micro_margin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="@dimen/micro_margin"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--privacy link-->
+        <LinearLayout
+            android:id="@+id/privacy_layout"
+            android:orientation="horizontal"
+            android:layout_below="@id/to_login_layout"
+            android:layout_marginTop="@dimen/micro_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/terms_link"
+                android:text="@string/terms_string"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/privacy_statement"
+                android:text=" and "
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/privacy_link"
+                android:text="@string/privacy_string"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_below="@id/app_logo"
+        android:layout_above="@id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/brand_name"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/formText"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_brandName"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/formTextSize"
+                        android:background="@drawable/form_text_border"
+                        android:padding="@dimen/margin_five"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/formText"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_username"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/formTextSize"
+                        android:background="@drawable/form_text_border"
+                        android:padding="@dimen/margin_five"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/formTextSize"
+                        android:background="@drawable/form_text_border"
+                        android:padding="@dimen/margin_five"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/formTextSize"
+                        android:background="@drawable/form_text_border"
+                        android:padding="@dimen/margin_five"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/new_sign_up_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textFieldPadding"
+                    android:text="@string/action_brand_sign_up"
+                    android:textColor="@color/buttonText"
+                    android:background="@drawable/border"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

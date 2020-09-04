@@ -1,0 +1,2 @@
+include ':uplanit', ':imagepicker', ':glide', ':facebook', ':applibrary', ':transformations', ':core', ':library'
+

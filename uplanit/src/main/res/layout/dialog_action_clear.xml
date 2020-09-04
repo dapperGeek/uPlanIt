@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context="com.dappergeek0.uplanit.dialogs.DialogActionClear">
+
+    <!-- confirm clear alert message -->
+    <TextView
+        android:id="@+id/confirm_clear"
+        android:paddingTop="@dimen/margin_twenty"
+        android:paddingBottom="@dimen/margin_twenty"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_fav_clear"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/confirm_clear"
+        android:paddingBottom="@dimen/micro_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_dialog_buttons"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.dappergeek0.uplanit.fragments.UserEventsFragment">
+    <item
+        android:id="@+id/clear_events"
+        android:orderInCategory="100"
+        android:title="@string/clear_events"
+        android:icon="@drawable/ic_delete_white"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/plan_event"
+        android:orderInCategory="100"
+        android:title="@string/nav_plan_event"
+        android:icon="@drawable/ic_action_add"
+        app:showAsAction="ifRoom|withText" />
+</menu>
